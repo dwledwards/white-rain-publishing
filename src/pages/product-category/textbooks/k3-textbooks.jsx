@@ -84,7 +84,7 @@ const Products = () => {
             updateQuery: handelUpdateQuery
         });
     };
-
+    
     const products = data?.products?.edges ||  [];
 
     return (
@@ -92,6 +92,7 @@ const Products = () => {
             <Box sx={{ flexGrow: 1, minHeight: "100vh" }}>
                 <Typography sx={{ fontSize: "1.4rem", fontFamily: "serif", fontWeight: "bold" }} py={3} px={15}> K3 TEXT BOOKS </Typography>  
                 <Grid container px={10}>
+                    { console.log("Ms Joy Products " + products) }
                     { products.map( product => {
                             return (
                                 <Grid item xs={3} px={2} py={2}>   
