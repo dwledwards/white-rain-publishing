@@ -131,3 +131,12 @@ const Products = () => {
 }
 
 export default Products;
+
+export const Head = () => (
+    <>
+      <title>K3 Textbooks</title>
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    </>
+    
+  );
+  

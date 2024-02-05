@@ -299,4 +299,10 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => (
+  <>
+    <title>Home Page</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  </>
+  
+);
